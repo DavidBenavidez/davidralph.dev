@@ -1,0 +1,83 @@
+.first-section {
+  background-color: $primary-color;
+  padding: $spacing-medium $spacing-medium $spacing-huge $spacing-medium;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  /**
+ * @TODO: Add breakpoints for background image; Render HD/4k version of background;
+ */
+  background: url('../assets/images/bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  @include breakpoint(tablet) {
+    align-items: center;
+    background: url('../assets/images/bg_l.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @include breakpoint(desktop) {
+    align-items: center;
+    background: url('../assets/images/bg_retina.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .git-ribbon-icon-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .title {
+    max-width: 680px;
+    min-height: 110px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .subheader { 
+    color: $white-color;
+    font-family: $font-stack-extra;
+  }
+
+  & svg {
+    @include font-size(50px);
+    position: absolute;
+    bottom: 0;
+    color: $white-color;
+    cursor: pointer;
+    margin-bottom: $spacing-medium;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+
+    &:hover {
+      color: $emphasis-color;
+    }
+  }
+
+  @-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+
+  @keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+}

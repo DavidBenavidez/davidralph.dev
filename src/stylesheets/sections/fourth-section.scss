@@ -1,0 +1,70 @@
+.fourth-section {
+  background-color: $secondary-color;
+  padding: $spacing-medium $spacing-medium $spacing-huge $spacing-medium;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  
+  & h1 { 
+    text-align: center; 
+    height: 30%;
+    margin-bottom: $spacing-base;
+  }
+
+  .content-container {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .social-media-container {
+      display: flex;
+      flex-direction: row;
+    
+      @include breakpoint(desktop) {
+        flex-direction: column;
+      }
+
+      .icon { 
+        display: flex;
+        align-items: center;
+        margin: $spacing-tiny;
+
+        &-label { 
+          @include font-size(12px);
+          letter-spacing: 2px;
+          color: $white-color;
+          display: none;
+      
+          @include breakpoint(desktop) {
+            display: block;
+          }
+        }
+    
+        & img {
+          height: 32px; width: 32px;
+          margin-right: $spacing-tiny;
+        }
+      }
+    }
+
+    .copyright {
+      color: $white-color;
+      @include font-size(8px);
+      text-align: center;
+      font-family: "Muli Light Italic";
+
+      @include breakpoint(tablet) { @include font-size(16px) }
+      @include breakpoint(desktop) { @include font-size(16px) }
+    }
+  }
+}

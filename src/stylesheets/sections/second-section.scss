@@ -1,0 +1,172 @@
+.second-section {
+  background-color: $tertiary-color;
+  padding: $spacing-medium $spacing-medium $spacing-huge $spacing-medium;
+  position: relative;
+  display: flex;
+
+  &:before {
+    position: absolute;
+    border: 10px solid $primary-color;
+    border-radius: 50%;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    top: -200px;
+    right: -100px;
+    content: '';
+
+    @include breakpoint(tablet) {
+      height: 400px;
+      width: 400px;
+      top: -250px;
+      right: -200px;
+    }
+
+    @include breakpoint(desktop) {
+      height: 700px;
+      width: 700px;
+      top: -300px;
+      right: -300px;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    bottom: -60px;
+    left: -40px;
+    content: '';
+    background: url('../assets/images/SVG/about-me-circles.svg') no-repeat;
+    background-size: 101% 105%;
+    height: 200px;
+    width: 200px;
+
+    @include breakpoint(tablet) {
+      bottom: -100px;
+      left: -70px;
+      height: 300px;
+      width: 300px;
+    }
+
+    @include breakpoint(desktop) {
+      bottom: -150px;
+      left: -80px;
+      height: 400px;
+      width: 400px;
+    }
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    @include breakpoint(tablet) {
+      flex-direction: row;
+    }
+
+    @include breakpoint(desktop) {
+      flex-direction: row;
+    }
+
+    .about-me-containter {
+      order: 2;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+
+      .about-me-item {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        margin-top: $spacing-base;
+        margin-bottom: $spacing-base;
+
+        &-intro { margin-top: $spacing-small; }
+
+        &-education {
+          display: flex;
+          justify-content: space-around;
+          flex-flow: row wrap;
+          margin-top: $spacing-small;
+          margin-bottom: $spacing-small;
+
+          &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          &-course { @include font-size(8px) }
+        }
+      }
+    }
+
+    .profile-picture-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      order: 1;
+
+      @include breakpoint(tablet) {
+        order: 2;
+      }
+  
+      @include breakpoint(desktop) {
+        order: 2;
+      }
+
+      .profile-picture {
+        height: 230px;
+        width: 230px;
+        border-radius: 50%;
+        background: url('../assets/images/profile-picture.jpg') no-repeat center;
+        background-size: cover;
+        border: 10px solid $gray-color;
+        margin-bottom: $spacing-small;
+        z-index: 2;
+
+        @include breakpoint(tablet) {
+          height: 280px;
+          width: 280px;
+        }
+    
+        @include breakpoint(desktop) {
+          height: 330px;
+          width: 330px;
+        }
+      }
+    }
+
+    .download-resume {
+      text-align: center;
+
+      &-label-pc {
+        display: none;
+        
+        @include breakpoint(desktop){
+          display: block;
+        }
+
+        @include breakpoint(desktop){
+          display: block;
+        }  
+      }
+
+      &-label-mobile {
+        align-self: center;
+        display: block;
+
+        @include breakpoint(desktop){
+          display: none;
+        }
+
+        @include breakpoint(desktop){
+          display: none;
+        }
+      }
+    }
+  }
+}
