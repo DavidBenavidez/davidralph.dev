@@ -121,6 +121,7 @@ export default ({ isFixed, isPastBottom }) => {
                       href="https://github.com/DavidBenavidez/swiftvuln"
                       target="_blank"
                       rel="noopener noreferrer"
+                      key={1}
                     >
                       here
                     </a>,
