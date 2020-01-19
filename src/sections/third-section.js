@@ -51,34 +51,37 @@ export default ({ isFixed, isPastBottom }) => {
             data-sal-easing="ease"
             className="experience-navigator"
           >
-            <span
+            <button
               className="experience-navigator-item"
               onClick={() => scrollTo('#experience-yses')}
             >
               {' '}
               YSES{' '}
-            </span>
+            </button>
             |
-            <span
+            <button
               className="experience-navigator-item"
               onClick={() => scrollTo('#experience-futurity')}
             >
               {' '}
               Futurity Learning{' '}
-            </span>
+            </button>
             |
-            <span className="experience-navigator-item" onClick={() => scrollTo('#experience-srg')}>
+            <button
+              className="experience-navigator-item"
+              onClick={() => scrollTo('#experience-srg')}
+            >
               {' '}
               SRG{' '}
-            </span>
+            </button>
             |
-            <span
+            <button
               className="experience-navigator-item"
               onClick={() => scrollTo('#experience-cheetah')}
             >
               {' '}
               Cheetah Digital{' '}
-            </span>
+            </button>
           </span>
         </div>
         <div className="scrolling-section">

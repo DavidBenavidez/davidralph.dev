@@ -51,7 +51,9 @@
       z-index: 1;
 
       &-item { 
-        cursor: pointer; 
+        all: unset;
+        cursor: pointer;  
+        margin: 0 $spacing-tiny 0 $spacing-tiny;
         
         &:hover { color: $secondary-color; }
       }
