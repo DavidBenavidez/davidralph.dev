@@ -24,7 +24,7 @@ class Site extends Component {
     const scrolling_section = document.getElementsByClassName('scrolling-section')[0];
 
     let is_past_bottom =
-      -scrolling_section.getBoundingClientRect().y >
+      -scrolling_section.getBoundingClientRect().top >
       scrolling_section.offsetHeight - window.innerHeight - 25;
 
     if (
