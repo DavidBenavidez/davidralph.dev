@@ -17,13 +17,13 @@ const ScrollingItem = ({ image, heading, year, image2, content, id }) => (
       <Image fixed={image2.childImageSharp.fixed} />
       <div
         data-sal="zoom-out"
-        data-sal-delay="200"
+        data-sal-delay="75"
         data-sal-easing="ease"
         className={`content-photo-frames content-photo-frames-${id}-1`}
       />
       <div
         data-sal="zoom-out"
-        data-sal-delay="200"
+        data-sal-delay="75"
         data-sal-easing="ease"
         className={`content-photo-frames content-photo-frames-${id}-2`}
       />

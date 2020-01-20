@@ -57,7 +57,7 @@ export default () => (
           </div>
         </div>
 
-        <div data-sal="slide-up" className="profile-picture-container">
+        <div className="profile-picture-container">
           <div className="profile-picture" />
           <a className="download-resume" href={resume} download>
             <span className="download-resume-label-pc"> You can download my resume here {}</span>
