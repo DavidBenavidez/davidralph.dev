@@ -240,6 +240,15 @@
               height: 320px;
               z-index: -1;
               left: 0;
+              display: none;
+
+              @include breakpoint(tablet){
+                display: none;
+              }
+
+              @include breakpoint(desktop){
+                display: block;
+              }
 
               &-experience-yses {
 

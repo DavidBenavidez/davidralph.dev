@@ -119,24 +119,14 @@
       }
 
       .profile-picture {
-        height: 230px;
-        width: 230px;
+        height: 330px;
+        width: 330px;
         border-radius: 50%;
         background: url('../assets/images/profile-picture.jpg') no-repeat center;
         background-size: cover;
         border: 10px solid $gray-color;
         margin-bottom: $spacing-small;
         z-index: 2;
-
-        @include breakpoint(tablet) {
-          height: 280px;
-          width: 280px;
-        }
-    
-        @include breakpoint(desktop) {
-          height: 330px;
-          width: 330px;
-        }
       }
     }
 

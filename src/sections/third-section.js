@@ -16,7 +16,7 @@ const ScrollingItem = ({ image, heading, year, image2, content, id }) => (
     <div className="content-photo">
       <Image fixed={image2.childImageSharp.fixed} />
       <div
-        data-sal="zoom-out"
+        data-sal="zoom-in"
         data-sal-delay="75"
         data-sal-easing="ease"
         className={`content-photo-frames content-photo-frames-${id}-1`}
@@ -56,12 +56,7 @@ export default ({ isFixed, isPastBottom }) => {
             </Heading>
           </div>
 
-          <span
-            data-sal="slide-up"
-            data-sal-delay="500"
-            data-sal-easing="ease"
-            className="experience-navigator"
-          >
+          <span className="experience-navigator">
             <button
               className="experience-navigator-item"
               onClick={() => scrollTo('#experience-yses')}
