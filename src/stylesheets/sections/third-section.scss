@@ -47,8 +47,12 @@
     .experience-navigator {
       color: $white-color;
       position: absolute;
-      bottom: 40px;
+      bottom: 60px;
       z-index: 1;
+      min-height: 220px;
+      min-width: 220px;
+      border-radius: 50%;
+      border: 5px solid $secondary-color;
 
       &-item { 
         all: unset;
@@ -56,13 +60,23 @@
         background-color: unset;
         color: unset;
         cursor: pointer;  
-        margin: 0 $spacing-tiny 0 $spacing-tiny;
         
-        @include breakpoint(tablet){ @include font-size(12px); }
+        @include breakpoint(tablet){ @include font-size(16px); }
         @include breakpoint(desktop){ @include font-size(16px); }
 
         &:hover { color: $secondary-color; }
       }
+
+      span {
+        height: 100px;
+        position: absolute;
+        width: 20px;
+        left: 0;
+        top: 0;
+        transform-origin: bottom center;
+      }
+
+      @include rotated-text(35, 375deg, 0deg)
     }
 
     &:before {

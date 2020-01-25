@@ -56,39 +56,59 @@ export default ({ isFixed, isPastBottom }) => {
             </Heading>
           </div>
 
-          <span className="experience-navigator">
+          <div
+            className="experience-navigator"
+            data-sal="zoom-out"
+            data-sal-easing="ease"
+            data-sal-delay="500"
+          >
             <button
               className="experience-navigator-item"
               onClick={() => scrollTo('#experience-yses')}
             >
-              {' '}
-              YSES{' '}
+              <span className="char1">Y</span>
+              <span className="char2">S</span>
+              <span className="char3">E</span>
+              <span className="char4">S</span>
             </button>
-            |
+            <span className="char6">|</span>
             <button
               className="experience-navigator-item"
               onClick={() => scrollTo('#experience-futurity')}
             >
-              {' '}
-              Futurity Learning{' '}
+              <span className="char8">F</span>
+              <span className="char9">u</span>
+              <span className="char10">t</span>
+              <span className="char11">u</span>
+              <span className="char12">r</span>
+              <span className="char13">i</span>
+              <span className="char14">t</span>
+              <span className="char15">y</span>
             </button>
-            |
+            <span className="char17">|</span>
             <button
               className="experience-navigator-item"
               onClick={() => scrollTo('#experience-srg')}
             >
-              {' '}
-              SRG{' '}
+              <span className="char19">S</span>
+              <span className="char20">R</span>
+              <span className="char21">G</span>
             </button>
-            |
+            <span className="char23">|</span>
             <button
               className="experience-navigator-item"
               onClick={() => scrollTo('#experience-cheetah')}
             >
-              {' '}
-              Cheetah Digital{' '}
+              <span className="char25">C</span>
+              <span className="char26">h</span>
+              <span className="char27">e</span>
+              <span className="char28">e</span>
+              <span className="char29">t</span>
+              <span className="char30">a</span>
+              <span className="char31">h</span>
             </button>
-          </span>
+            <span className="char33">|</span>
+          </div>
         </div>
         <div className="scrolling-section">
           <StaticQuery

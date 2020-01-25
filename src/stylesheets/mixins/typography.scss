@@ -1,7 +1,19 @@
-/* Code sippet from Ralph Lawrence Silaya: https://github.com/rrsilaya
+/* Mixin from Ralph Lawrence Silaya: https://github.com/rrsilaya
 
 /* Conversion from font sie to rem */
 @mixin font-size($size) {
   font-size: $size;
   font-size: ($size / 16px) * 1rem;
+}
+
+/* Mixin from: https://gist.github.com/chriseppstein/8615d6dc847e10c72fe5 */
+@mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {
+  $angle-per-char: $angle-span / $num-letters;
+  @for $i from 1 through $num-letters {
+    .char#{$i} { 
+      transform: (rotate($angle-offset + $angle-per-char * $i));
+      left: 95px;
+      top: 5px;
+    }
+  }
 }
