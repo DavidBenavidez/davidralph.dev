@@ -3,7 +3,9 @@ import { withPrefix } from 'gatsby';
 export const TITLE = 'David Benavidez - Developer. Geek. Know-it-all.';
 export const DESCRIPTION =
   'Hi there! I’m David. I’m a Software Engineer from Metro Manila, Philippines. I love developing web/desktop applications and I look forward to forging a steady career path in the field of Software Engineering.';
-export const URL = 'https://davidralph.dev/';
+// For custom domain
+// export const URL = 'https://davidralph.dev/';
+export const URL = 'https://drbenavidez.netlify.com/';
 export default (title = TITLE, description = DESCRIPTION, url = URL) => [
   {
     name: 'description',
@@ -12,7 +14,7 @@ export default (title = TITLE, description = DESCRIPTION, url = URL) => [
   {
     name: 'keywords',
     content:
-      'David Ralph de Jesus Benavidez, David Ralph Benavidez, David Benavidez, Development, Software Engineer, Engineer, Computer Science, UPLB, University of the Philippines, Los Baños, UP, Cheetah Digital, Futurity Learning, UPLB SRG, UPLB Systems Research Group',
+      "David Ralph de Jesus Benavidez, David Ralph Benavidez, David Benavidez, Development, Software Engineer, Engineer, Computer Science, UPLB, University of the Philippines, Los Baños, UP, Cheetah Digital, Futurity Learning, UPLB SRG, UPLB Systems Research Group, YSES, Young Software Engineers' Society",
   },
   {
     name: 'author',
