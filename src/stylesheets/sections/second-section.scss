@@ -85,8 +85,15 @@
         margin-bottom: $spacing-base;
 
         &-intro { 
+          margin-top: $spacing-small;
+          text-align: justify;
           @include font-size(18px);
-          margin-top: $spacing-small; 
+          
+          @include breakpoint(tablet) { text-align: left; }
+  
+          @include breakpoint(desktop) { text-align: left; }
+          @include breakpoint(desktop-large) { text-align: left; }
+          @include breakpoint(desktop-xlarge) { text-align: left; }
         }
 
         &-education {
