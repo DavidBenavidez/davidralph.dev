@@ -1,37 +1,22 @@
 .first-section {
-  background-color: $primary-color;
   padding: $spacing-medium $spacing-medium $spacing-huge $spacing-medium;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
-  /**
- * @TODO: Add breakpoints for background image; Render HD/4k version of background;
- */
-  background: url('../assets/images/bg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  align-items: left;
 
-  @include breakpoint(tablet) {
-    align-items: center;
-    background: url('../assets/images/bg_l.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-  }
+  @include breakpoint(tablet) { align-items: center; }
 
-  @include breakpoint(desktop) {
-    align-items: center;
-    background: url('../assets/images/bg_retina.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-  }
+  @include breakpoint(desktop) { align-items: center; }
+
+  @include breakpoint(desktop-large) { align-items: center; }
+
+  @include breakpoint(desktop-xlarge) { align-items: center; }
   
   .title {
     max-width: 680px;
@@ -62,6 +47,7 @@
     cursor: pointer;
     margin-bottom: $spacing-medium;
     animation: float 4s ease-in-out infinite;
+    z-index: 2;
 
     &:hover {
       color: $primary-color;
