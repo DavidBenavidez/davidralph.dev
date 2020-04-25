@@ -25,8 +25,8 @@ export default () => (
             </Heading>
             <span className="about-me-item-intro">
               Hi there! I’m David. I’m a Software Engineer from Metro Manila, Philippines. I love
-              developing web/desktop applications and I look forward to forging a steady career path
-              in the field of Software Engineering.
+              developing web applications and I look forward to forging a steady career path in the
+              field of Software Engineering.
             </span>
           </div>
 

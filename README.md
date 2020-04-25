@@ -1,5 +1,5 @@
 # David Benavidez
-##### Currently deployed at drbenavidez.netlify.com
+##### Deployed at https://davidralph.dev
 ### Installation
 1. Clone this repository.
 2. Install all the dependencies with `yarn install`.
