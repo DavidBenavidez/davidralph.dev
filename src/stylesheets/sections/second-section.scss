@@ -84,7 +84,10 @@
         margin-top: $spacing-base;
         margin-bottom: $spacing-base;
 
-        &-intro { margin-top: $spacing-small; }
+        &-intro { 
+          @include font-size(18px);
+          margin-top: $spacing-small; 
+        }
 
         &-education {
           display: flex;

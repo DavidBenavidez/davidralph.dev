@@ -32,13 +32,7 @@
     background-position: center;
     background-size: cover;
   }
-
-  .git-ribbon-icon-container{
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
+  
   .title {
     max-width: 680px;
     min-height: 110px;
@@ -60,28 +54,17 @@
     font-family: $font-stack-extra;
   }
 
-  & svg {
+  & .arrow-down {
     @include font-size(50px);
     position: absolute;
     bottom: 0;
     color: $white-color;
     cursor: pointer;
     margin-bottom: $spacing-medium;
-    -webkit-animation: action 1s infinite  alternate;
-    animation: action 1s infinite  alternate;
+    animation: float 4s ease-in-out infinite;
 
     &:hover {
-      color: $emphasis-color;
+      color: $primary-color;
     }
-  }
-
-  @-webkit-keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-  }
-
-  @keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
   }
 }

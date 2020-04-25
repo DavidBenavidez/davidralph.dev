@@ -44,41 +44,6 @@
       z-index: 1;
     }
 
-    .experience-navigator {
-      color: $white-color;
-      position: absolute;
-      bottom: 60px;
-      z-index: 1;
-      min-height: 220px;
-      min-width: 220px;
-      border-radius: 50%;
-      border: 5px solid $white-color;
-
-      &-item { 
-        all: unset;
-        border: none;
-        background-color: unset;
-        color: unset;
-        cursor: pointer;  
-        
-        @include breakpoint(tablet){ @include font-size(16px); }
-        @include breakpoint(desktop){ @include font-size(16px); }
-
-        &:hover { color: $secondary-color; }
-      }
-
-      span {
-        height: 100px;
-        position: absolute;
-        width: 20px;
-        left: 0;
-        top: 0;
-        transform-origin: bottom center;
-      }
-
-      @include rotated-text(35, 375deg, 0deg)
-    }
-
     &:before {
       position: absolute;
       content: '';
@@ -89,7 +54,8 @@
       width: 250px;
       top: -80px;
       right: -45px;
-
+      animation: rotating 10s linear infinite;
+     
       @include breakpoint(tablet) {
         height: 250px;
         width: 250px;
@@ -215,6 +181,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        .logo {      
+          animation: float 2s ease-in-out infinite;
+        }
         
         .logo-shadow {
           width: 60px;
@@ -238,6 +208,7 @@
             text-align: justify;
             margin: $spacing-base;
             line-height: 25px;
+            font-weight: 600;
           }
 
           &-photo {
@@ -267,15 +238,15 @@
               &-experience-yses {
 
                 &-1 {
-                  border: 5px solid $primary-color;
-                  top: -20px;
-                  left: 20px;
+                  border: 5px solid $secondary-color;
+                  top: -10px;
+                  left: -20px;
                 }
-
+                
                 &-2 {
-                  border: 5px solid $emphasis-color;
-                  top: 5px;
-                  left: -30px;
+                  border: 5px solid $gray-color;
+                  left: 30px;
+                  top: 10px;
                 }
               }
 

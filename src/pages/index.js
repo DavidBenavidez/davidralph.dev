@@ -20,35 +20,28 @@ class Site extends Component {
     };
   }
 
-  fix_me_func = () => {
+  fix_third_section = () => {
     const scrolling_section = document.getElementsByClassName('scrolling-section')[0];
 
-    let is_past_bottom =
+    const is_element_past_bottom =
       -scrolling_section.getBoundingClientRect().top >
       scrolling_section.offsetHeight - window.innerHeight - 25;
-
-    if (
+    const is_element_past_top =
       scrolling_section.getBoundingClientRect().top <= 0 &&
-      scrolling_section.getBoundingClientRect().bottom > window.innerHeight
-    ) {
-      this.setState({ isFixed: true });
-    } else {
-      this.setState({ isFixed: false });
-    }
+      scrolling_section.getBoundingClientRect().bottom > window.innerHeight;
 
-    if (is_past_bottom) {
-      this.setState({ isPastBottom: true });
-    } else {
-      this.setState({ isPastBottom: false });
-    }
+    is_element_past_top ? this.setState({ isFixed: true }) : this.setState({ isFixed: false });
+    is_element_past_bottom
+      ? this.setState({ isPastBottom: true })
+      : this.setState({ isPastBottom: false });
+  };
+
+  do_on_scroll = () => {
+    this.fix_third_section();
   };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.fix_me_func);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.fix_me_func);
+    window.addEventListener('scroll', this.do_on_scroll);
   }
 
   render() {
