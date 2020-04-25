@@ -1,11 +1,10 @@
 import { withPrefix } from 'gatsby';
+import preview from 'assets/images/bg.png';
 
 export const TITLE = 'David Benavidez - Developer. Geek. Know-it-all.';
 export const DESCRIPTION =
   'Hi there! I’m David. I’m a Software Engineer from Metro Manila, Philippines. I love developing web/desktop applications and I look forward to forging a steady career path in the field of Software Engineering.';
-// For custom domain
-// export const URL = 'https://davidralph.dev/';
-export const URL = 'https://drbenavidez.netlify.com/';
+export const URL = 'https://davidralph.dev/';
 export default (title = TITLE, description = DESCRIPTION, url = URL) => [
   {
     name: 'description',
@@ -27,6 +26,32 @@ export default (title = TITLE, description = DESCRIPTION, url = URL) => [
   {
     name: 'theme-color',
     content: '#001D25',
+  },
+  // Open Grraph Meta tags: https://www.addtoany.com/ext/meta-tags/
+  {
+    name: 'og:title',
+    content: title,
+  },
+  {
+    name: 'og:image',
+    content: preview,
+  },
+  {
+    name: 'og:description',
+    content: description,
+  },
+  // Facebook
+  {
+    name: 'fb:page_id',
+    content: 'davidralph',
+  },
+  {
+    name: 'og:type',
+    content: 'website',
+  },
+  {
+    name: 'og:site_name',
+    content: title,
   },
   // Twitter
   {
