@@ -1,7 +1,7 @@
 import { withPrefix } from 'gatsby';
 import preview from 'assets/images/bg.png';
 
-export const TITLE = 'David Benavidez - Developer. Geek. Know-it-all.';
+export const TITLE = 'David Benavidez - Developer. Techie. Gamer.';
 export const DESCRIPTION =
   'Hi there! I’m David. I’m a Software Engineer from Metro Manila, Philippines. I love developing web/desktop applications and I look forward to forging a steady career path in the field of Software Engineering.';
 export const URL = 'https://davidralph.dev/';
