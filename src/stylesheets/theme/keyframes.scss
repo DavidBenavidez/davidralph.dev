@@ -10,6 +10,21 @@
   }
 }
 
+@keyframes float-far {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  33% {
+    transform: translate(-50px, -50px);
+  }
+  66% {
+    transform: translate(50px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);

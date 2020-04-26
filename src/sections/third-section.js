@@ -6,7 +6,7 @@ import { Heading } from '@common';
 
 const ScrollingItem = ({ image, heading, year, image2, content, id }) => (
   <div className="scrolling-section-item-container" id={id}>
-    <div className="logo" data-sal="slide-up">
+    <div data-sal="slide-up">
       <Image fixed={image.childImageSharp.fixed} />
     </div>
     <div className="logo-shadow" />

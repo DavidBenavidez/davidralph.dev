@@ -142,6 +142,7 @@
       overflow: hidden;
       z-index: 0;
       opacity: 0.5;
+      animation: float-far 30s ease-in-out infinite;
     }
 
     &:after {
@@ -157,6 +158,7 @@
       z-index: 0;
       opacity: 0.5;
       transform: rotateZ(180deg);
+      animation: float-far 30s ease-in-out infinite;
     }
 
     &-item {
@@ -181,10 +183,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        .logo {      
-          animation: float 2s ease-in-out infinite;
-        }
         
         .logo-shadow {
           width: 60px;

@@ -3,7 +3,7 @@ import { Heading } from '@common';
 
 import facebook from 'assets/images/social/light/facebook.png';
 import twitter from 'assets/images/social/light/twitter.png';
-import github from 'assets/images/social/light/GitHub-Mark-Light-32px.png';
+import github from 'assets/images/social/light/GitHub-Mark-Light-64px.png';
 import linkedin from 'assets/images/social/light/linkedin.png';
 
 export default () => (
