@@ -141,8 +141,8 @@
       left: -150px;
       overflow: hidden;
       z-index: 0;
-      opacity: 0.5;
-      animation: float-far 30s ease-in-out infinite;
+      opacity: 0.3;
+      animation: float-far 50s ease-in-out infinite;
     }
 
     &:after {
@@ -156,9 +156,9 @@
       left: -150px;
       overflow: hidden;
       z-index: 0;
-      opacity: 0.5;
+      opacity: 0.3;
       transform: rotateZ(180deg);
-      animation: float-far 30s ease-in-out infinite;
+      animation: float-far 50s ease-in-out infinite;
     }
 
     &-item {
