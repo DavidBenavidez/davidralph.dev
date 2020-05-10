@@ -1,3 +1,5 @@
+// Code sippet from Ralph Lawrence Silaya: https://github.com/rrsilaya
+
 .heading {
   font-family: $font-stack-heading, $font-stack-fallback;
   color: $emphasis-color;
@@ -60,10 +62,6 @@
     background-color: $accent-color;
   }
 
-  /**
-   * @TODO: Add different sizes based on the different
-   * screen breakpoints.
-   */
   &--accent {
     &:after {
       height: 4px;

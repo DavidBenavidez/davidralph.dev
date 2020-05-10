@@ -38,7 +38,6 @@ export default () => (
               query={query}
               render={data => (
                 <div className="about-me-item-education">
-                  <EducationItem image={data.msmsi} description="Elementary" />
                   <EducationItem image={data.rural} description="High School" />
                   <EducationItem
                     image={data.uplb}
@@ -70,14 +69,6 @@ export default () => (
 
 const query = graphql`
   query {
-    msmsi: file(relativePath: { eq: "education/msmsi.png" }) {
-      childImageSharp {
-        fixed(height: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-
     rural: file(relativePath: { eq: "education/rural.png" }) {
       childImageSharp {
         fixed(height: 100) {

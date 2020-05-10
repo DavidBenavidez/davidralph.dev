@@ -35,13 +35,9 @@ export default () => (
   </Fragment>
 );
 
-/**
- * @TODO: Add breakpoints for background image; Render HD/4k version of background;
- */
-
 const query = graphql`
   query {
-    background: file(relativePath: { eq: "bg_retina.png" }) {
+    background: file(relativePath: { eq: "bg.png" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp

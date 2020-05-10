@@ -53,7 +53,7 @@ let plugins = [
 
 module.exports = {
   siteMetadata: {
-    title: `David Benavidez - your friendly neighborhood developer`,
+    title: `David Benavidez - Developer. Techie. Gamer.`,
   },
   plugins,
 };

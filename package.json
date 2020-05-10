@@ -17,7 +17,7 @@
     "gatsby-plugin-google-analytics": "^2.1.33",
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-netlify": "^2.1.31",
-    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-root-import": "^2.0.4",
     "gatsby-plugin-sass": "^2.0.1",
     "gatsby-plugin-scroll-reveal": "^0.0.4",
@@ -29,7 +29,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-github-corner": "^2.3.0",
-    "react-helmet": "^5.2.0",
+    "react-helmet": "^6.0.0",
     "react-icons": "^3.8.0"
   },
   "lint-staged": {
@@ -41,7 +41,7 @@
   "devDependencies": {
     "husky": "^1.1.2",
     "lint-staged": "^7.3.0",
-    "node": "^8.11.4",
+    "node": "^12.14.0",
     "prettier": "^1.19.1"
   },
   "husky": {

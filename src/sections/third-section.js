@@ -76,18 +76,7 @@ export default ({ isFixed, isPastBottom }) => {
                   heading="UPLB Systems Research Group"
                   year="2019"
                   image2={data.srg_photo}
-                  content={[
-                    'My college thesis adviser asked me to represent the UPLB SRG during the Best Special Problem Presentation.  I developed a Network Security Quantifier using Python and OpenVAS 9.  The code can be found ',
-                    <a
-                      href="https://github.com/DavidBenavidez/swiftvuln"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      key={1}
-                    >
-                      here
-                    </a>,
-                    '.',
-                  ]}
+                  content="My college thesis adviser asked me to represent the UPLB SRG during the Best Special Problem Presentation.  I developed a Network Security Quantifier using Python and OpenVAS 9."
                 />
                 <ScrollingItem
                   id="experience-cheetah"
@@ -100,14 +89,14 @@ export default ({ isFixed, isPastBottom }) => {
                   in the integrations team."
                 />
                 {/* 
-                  ADD ING
+                  TO DO: ADD ING
                   <ScrollingItem
-                  id="experience-cheetah"
-                  image={data.cheetah_logo}
+                  id="experience-ing"
+                  image={data.ing_logo}
                   heading="ING"
                   year="2020 - present"
-                  image2={data.cheetah_photo}
-                  content="In ING, we develop global banking shared services using the most efficient technologies. I'm currently assigned as a Front-End Developer in the Web Engineering team."
+                  image2={data.ing_photo}
+                  content="In ING, Lorem ipsom dolor sit amet."
                 /> */}
               </div>
             )}

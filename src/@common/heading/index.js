@@ -35,33 +35,13 @@ export const Heading = props => {
           {children}
         </h3>
       );
-    case 'h3':
-      return (
-        <h4
-          className={`heading heading-3 ${white ? 'heading-white' : 'heading-black'} ${
-            accent ? 'heading--accent' : ''
-          } ${center ? 'heading--accent-center' : ''}`}
-        >
-          {children}
-        </h4>
-      );
-    case 'h4':
-      return (
-        <h4
-          className={`heading heading-4 ${accent ? 'heading--accent' : ''} ${
-            white ? 'heading-white' : 'heading-black'
-          } ${center ? 'heading--accent-center' : ''}`}
-        >
-          {children}
-        </h4>
-      );
     default:
       return null;
   }
 };
 
 Heading.propTypes = {
-  size: PropTypes.oneOf(['hero', 'h1', 'h2', 'h3', 'h4']).isRequired,
+  size: PropTypes.oneOf(['hero', 'h1', 'h2']).isRequired,
   accent: PropTypes.bool,
   center: PropTypes.bool,
 };
