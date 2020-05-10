@@ -4,14 +4,15 @@
   "start_url": "/",
   "background_color": "#ffffff",
   "theme_color": "#001D25",
+  "icon": "src/favicons/64x64.ico",
   "icons": [
     {
-      "src": "64x64.ico",
+      "src": "favicons/64x64.ico",
       "sizes": "96x96 64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "256x256.ico",
+      "src": "favicons/256x256.ico",
       "sizes": "144x144 192x192 256x256",
       "type": "image/x-icon"
     }
