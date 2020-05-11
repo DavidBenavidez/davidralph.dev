@@ -117,7 +117,7 @@ const query = graphql`
       }
     }
 
-    cheetah_photo: file(relativePath: { eq: "experience/cheetah_photo.jpeg" }) {
+    cheetah_photo: file(relativePath: { eq: "experience/cheetah_photo.jpg" }) {
       childImageSharp {
         fixed(height: 300) {
           ...GatsbyImageSharpFixed
@@ -133,7 +133,7 @@ const query = graphql`
       }
     }
 
-    futurity_photo: file(relativePath: { eq: "experience/futurity_learning_photo.png" }) {
+    futurity_photo: file(relativePath: { eq: "experience/futurity_learning_photo.jpg" }) {
       childImageSharp {
         fixed(height: 300) {
           ...GatsbyImageSharpFixed
@@ -149,7 +149,7 @@ const query = graphql`
       }
     }
 
-    yses_photo: file(relativePath: { eq: "experience/YSES_photo.png" }) {
+    yses_photo: file(relativePath: { eq: "experience/YSES_photo.jpg" }) {
       childImageSharp {
         fixed(height: 300) {
           ...GatsbyImageSharpFixed
@@ -165,7 +165,7 @@ const query = graphql`
       }
     }
 
-    srg_photo: file(relativePath: { eq: "experience/SRG_photo.png" }) {
+    srg_photo: file(relativePath: { eq: "experience/SRG_photo.jpg" }) {
       childImageSharp {
         fixed(height: 300) {
           ...GatsbyImageSharpFixed

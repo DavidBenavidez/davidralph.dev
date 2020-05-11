@@ -47,20 +47,23 @@ export default () => (
                 </div>
               )}
             />
-            <a className="download-resume" href={resume} download>
-              <span className="download-resume-label-mobile">
-                {' '}
-                You can download my resume here {}
-              </span>
-            </a>
+            <span className="download-resume-label-mobile">
+              To download my resume,{' '}
+              <a className="download-resume" href={resume} download>
+                click here
+              </a>
+            </span>
           </div>
         </div>
 
         <div className="profile-picture-container">
           <div className="profile-picture" />
-          <a className="download-resume" href={resume} download>
-            <span className="download-resume-label-pc"> You can download my resume here {}</span>
-          </a>
+          <span className="download-resume-label-pc">
+            To download my resume,{' '}
+            <a className="download-resume" href={resume} download>
+              click here
+            </a>
+          </span>
         </div>
       </div>
     </div>

@@ -49,6 +49,12 @@ let plugins = [
       disable: false, // Flag for disabling animations
     },
   },
+  {
+    resolve: 'gatsby-plugin-preconnect',
+    options: {
+      domains: ['https://www.google-analytics.com'],
+    },
+  },
 ];
 
 module.exports = {

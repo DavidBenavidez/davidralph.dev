@@ -47,7 +47,9 @@ class Site extends Component {
   render() {
     return (
       <main>
-        <Helmet title={TITLE} meta={meta()} link={link}></Helmet>
+        <Helmet title={TITLE} meta={meta()} link={link}>
+          <html lang="en" />
+        </Helmet>
         <Header />
         <AboutMe />
         <Fallback />
