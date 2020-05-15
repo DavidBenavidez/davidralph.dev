@@ -13,8 +13,12 @@ export default () => (
       render={data => (
         <BackgroundImage
           Tag="section"
+          className="background-image"
           fluid={data.background.childImageSharp.fluid}
-          backgroundColor={`#040e18`}
+          style={{
+            backgroundColor: '#040e18',
+            backgroundAttachment: 'fixed',
+          }}
         >
           <div className="section first-section">
             <GithubCorner
