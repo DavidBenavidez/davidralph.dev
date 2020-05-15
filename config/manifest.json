@@ -1,6 +1,7 @@
 {
   "name": "Skilled and experienced in web and desktop application development.",
   "short_name": "David Benavidez",
+  "display": "standalone",
   "start_url": "/",
   "background_color": "#ffffff",
   "theme_color": "#001D25",
@@ -12,10 +13,19 @@
       "type": "image/x-icon"
     },
     {
+      "src": "favicons/192x192.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon"
+    },
+    {
       "src": "favicons/256x256.ico",
-      "sizes": "144x144 192x192 256x256",
+      "sizes": "144x144 256x256",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicons/512x512.ico",
+      "sizes": "512x512",
       "type": "image/x-icon"
     }
   ]
 }
-
