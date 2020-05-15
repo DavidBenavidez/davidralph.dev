@@ -48,9 +48,9 @@ export default () => (
               )}
             />
             <span className="download-resume-label-mobile">
-              To download my resume,{' '}
+              Want to know more?{' '}
               <a className="download-resume" href={resume} download>
-                click here
+                Download my resume.
               </a>
             </span>
           </div>
@@ -59,9 +59,9 @@ export default () => (
         <div className="profile-picture-container">
           <div className="profile-picture" />
           <span className="download-resume-label-pc">
-            To download my resume,{' '}
+            Want to know more?{' '}
             <a className="download-resume" href={resume} download>
-              click here
+              Download my resume.
             </a>
           </span>
         </div>

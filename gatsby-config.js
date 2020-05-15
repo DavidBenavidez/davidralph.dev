@@ -27,6 +27,12 @@ let plugins = [
       name: 'images',
     },
   },
+  {
+    resolve: `gatsby-plugin-offline`,
+    options: {
+      precachePages: [`/`],
+    },
+  },
   'gatsby-plugin-sharp',
   'gatsby-transformer-sharp',
   'gatsby-plugin-sass',
