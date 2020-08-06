@@ -58,8 +58,8 @@ export default ({ isFixed, isPastBottom }) => {
                   image2={data.yses_photo}
                   content="In college, I joined YSES: an organization focused on bridging the gap
                   between the academe and the industry. I headed multiple committees during various
-                  organizational events. Moreover, I learned new technologies
-                  that the academe was not able to teach me."
+                  organizational events. Moreover, I was able to learn multiple web development
+                  technologies early in the academe such as ReactJS and NodeJS."
                 />
                 <ScrollingItem
                   id="experience-futurity"
@@ -68,7 +68,7 @@ export default ({ isFixed, isPastBottom }) => {
                   year="2019"
                   image2={data.futurity_photo}
                   content="In Futurity Learning we developed multiple mobile and web applications using
-                  reactjs and firebase."
+                  ReactJS and Firebase."
                 />
                 <ScrollingItem
                   id="experience-srg"
@@ -84,7 +84,7 @@ export default ({ isFixed, isPastBottom }) => {
                   heading="Cheetah Digital"
                   year="2019 - 2020"
                   image2={data.cheetah_photo}
-                  content="In Cheetah Digital, I developed customer engagement strategies through loyalty
+                  content="In Cheetah Digital, we developed customer engagement strategies via loyalty
                   programs and cross-channel messaging using Ruby on Rails and Java/Scala. I was assigned as a Software Engineer 
                   in the integrations team."
                 />

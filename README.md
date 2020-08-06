@@ -14,7 +14,4 @@
 ### Initial Application Design
 <img src="src/assets/images/website_initial_design.png" />
 
-### Running the application
-1. Clone this repository.
-2. Install all the dependencies with `npm install` or `yarn install`.
-3. Start the development server with `npm start` or `yarn start`.
+*Credits to [Ralph Lawrence Silaya](https://github.com/rrsilaya) for code boilerplate*
