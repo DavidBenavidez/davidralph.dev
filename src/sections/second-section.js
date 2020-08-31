@@ -1,18 +1,9 @@
 import React, { Fragment } from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
 import { Heading } from '@common';
 import resume from '../assets/resume.pdf';
 
-const EducationItem = ({ image, description, subdescription }) => (
-  <div>
-    <div className="about-me-item-education-item">
-      <Image fixed={image.childImageSharp.fixed} />
-      <span> {description} </span>
-      <span className="about-me-item-education-course"> {subdescription} </span>
-    </div>
-  </div>
-);
+import * as primaryTechImages from '../assets/images/primary-tech';
+import * as secondaryTechImages from '../assets/images/secondary-tech';
 
 export default () => (
   <Fragment>
@@ -21,39 +12,32 @@ export default () => (
         <div className="about-me-containter">
           <div className="about-me-item" data-sal="slide-up">
             <Heading size="h1" accent>
-              About Me
+              Primary Technologies
             </Heading>
-            <span className="about-me-item-intro">
-              Hi there! I’m David. I’m a Software Engineer from Metro Manila, Philippines. I love
-              developing web applications and I look forward to forging a steady career path in the
-              field of Software Engineering.
-            </span>
+            <div className="about-me-item__images">
+              {Object.keys(primaryTechImages).map(key => (
+                <img src={primaryTechImages[key]} alt={key} />
+              ))}
+            </div>
           </div>
 
           <div className="about-me-item" data-sal="slide-up">
             <Heading size="h1" accent>
-              Education
+              Secondary Technologies
             </Heading>
-            <StaticQuery
-              query={query}
-              render={data => (
-                <div className="about-me-item-education">
-                  <EducationItem image={data.rural} description="High School" />
-                  <EducationItem
-                    image={data.uplb}
-                    description="College"
-                    subdescription="BS Computer Science"
-                  />
-                </div>
-              )}
-            />
-            <span className="download-resume-label-mobile">
-              Want to know more?{' '}
-              <a className="download-resume" href={resume} download>
-                Download my resume.
-              </a>
-            </span>
+            <div className="about-me-item__images">
+              {Object.keys(secondaryTechImages).map(key => (
+                <img src={secondaryTechImages[key]} alt={key} />
+              ))}
+            </div>
           </div>
+
+          <span className="download-resume-label-mobile">
+            Want to know more?{' '}
+            <a className="download-resume" href={resume} download>
+              Download my resume.
+            </a>
+          </span>
         </div>
 
         <div className="profile-picture-container">
@@ -70,22 +54,14 @@ export default () => (
   </Fragment>
 );
 
-const query = graphql`
-  query {
-    rural: file(relativePath: { eq: "education/rural.png" }) {
-      childImageSharp {
-        fixed(height: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-
-    uplb: file(relativePath: { eq: "education/uplb.png" }) {
-      childImageSharp {
-        fixed(height: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`;
+// const query = graphql`
+//   query {
+//     javascript: file(relativePath: { eq: "images/primary-tech/javascript.svg" }) {
+//       childImageSharp {
+//         fixed(height: 100) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//   }
+// `;

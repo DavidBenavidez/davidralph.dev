@@ -2,8 +2,7 @@ import { withPrefix } from 'gatsby';
 import preview from 'assets/images/bg.png';
 
 export const TITLE = 'David Ralph Benavidez';
-export const DESCRIPTION =
-  'Developer. Techie. Gamer.';
+export const DESCRIPTION = 'Developer. Geek. Techie.';
 export const URL = 'https://davidralph.dev/';
 export default (title = TITLE, description = DESCRIPTION, url = URL) => [
   {

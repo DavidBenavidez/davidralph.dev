@@ -20,8 +20,9 @@ class Site extends Component {
     };
   }
 
-  fix_third_section = () => {
-    const scrolling_section = document.getElementsByClassName('scrolling-section')[0];
+  // Fixes the left side of the third section
+  fixThirdSection = () => {
+    const scrolling_section = document.querySelector('.scrolling-section');
 
     const is_element_past_bottom =
       -scrolling_section.getBoundingClientRect().top >
@@ -36,12 +37,8 @@ class Site extends Component {
       : this.setState({ isPastBottom: false });
   };
 
-  do_on_scroll = () => {
-    this.fix_third_section();
-  };
-
   componentDidMount() {
-    window.addEventListener('scroll', this.do_on_scroll);
+    window.addEventListener('scroll', this.fixThirdSection);
   }
 
   render() {

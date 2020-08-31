@@ -12,7 +12,7 @@ export default () => (
     <div className="section-half fourth-section">
       <Heading size="hero" white>
         {' '}
-        Don't Be a Stranger
+        Contact Me
       </Heading>
       <div className="content-container">
         <div className="social-media-container">

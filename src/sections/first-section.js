@@ -30,7 +30,7 @@ export default () => (
                 David Benavidez
               </Heading>
             </div>
-            <span className="subheader"> Developer. Techie. Gamer. </span>
+            <span className="subheader"> Developer. Geek. Techie. </span>
             <FaAngleDoubleDown className="arrow-down" onClick={() => scrollTo('#second-section')} />
           </div>
         </BackgroundImage>
